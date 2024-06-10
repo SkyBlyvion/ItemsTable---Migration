@@ -248,12 +248,11 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Stock';
             Description = 'NTVAlmacen LN 10/06/24 REV24';
         }
-        field(50040; "DEEE"; Decimal)
+        field(50040; "DEEE"; Decimal) // montant du deee
         {
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'DEEE';
             Description = 'NTVWEB LN 10/06/24 REV24';
-            TableRelation = "Code DEEE"."Code";
         }
         field(50041; "Eco-Mobilier"; Decimal)
         {
@@ -262,7 +261,7 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'NTVWEB LN 10/06/24 REV24';
             TableRelation = "Code Eco-Mobilier"."Code";
         }
-        field(50042; "Eco-Mob"; Boolean)
+        field(50042; "Eco-Mob"; Boolean) // soumis a eco-mob ou non
         {
             DataClassification = SystemMetadata;
             Caption = 'Eco-Mob';

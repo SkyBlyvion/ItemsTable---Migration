@@ -11,6 +11,7 @@ table 50016 "Présentation"
         field(2; "Code Langue"; Code[10])
         {
             DataClassification = ToBeClassified;
+            TableRelation = Language."Code";
         }
         field(3; "Désignation"; Text[30])
         {
@@ -20,7 +21,7 @@ table 50016 "Présentation"
 
     keys
     {
-        key(PK; "Code")
+        key(PK; "Code", "Code Langue")
         {
             Clustered = true;
         }
