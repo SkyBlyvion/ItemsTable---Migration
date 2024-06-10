@@ -188,7 +188,6 @@ tableextension 50018 "Item Extension" extends Item
         }
         field(50030; "Embalaje"; Text[30])
         {
-            //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Embalaje';
             Description = 'NTV LN 10/06/24 REV24';
@@ -237,7 +236,7 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Nbre colis';
             Description = 'NTVAlmacen LN 10/06/24 REV24';
         }
-        field(50038; "Code Eco-Participation"; code[3])
+        field(50038; "Code Eco-Participation"; Code[3])
         {
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code Eco-Participation';
@@ -251,7 +250,6 @@ tableextension 50018 "Item Extension" extends Item
         }
         field(50040; "DEEE"; Decimal)
         {
-            //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'DEEE';
             Description = 'NTVWEB LN 10/06/24 REV24';
@@ -259,7 +257,6 @@ tableextension 50018 "Item Extension" extends Item
         }
         field(50041; "Eco-Mobilier"; Decimal)
         {
-            //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Eco-Mobilier';
             Description = 'NTVWEB LN 10/06/24 REV24';
@@ -291,7 +288,6 @@ tableextension 50018 "Item Extension" extends Item
         }
         field(50046; "Code DEEE"; Code[10])
         {
-            //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code DEEE';
             Description = 'Article LN 10/06/24 REV24';
@@ -299,7 +295,6 @@ tableextension 50018 "Item Extension" extends Item
         }
         field(50047; "Code Eco-Jardin"; Code[10])
         {
-            //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code Eco-Jardin';
             Description = 'Article LN 10/06/24 REV24';
