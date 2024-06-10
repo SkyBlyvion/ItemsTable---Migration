@@ -131,7 +131,7 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Article LN 10/06/24 REV24';
             OptionMembers = "","Egg Grate","White Box","White Box + Color Label","Normal Box","Display Box","Polybag","Cardboard","Paper";
         }
-        field(50021; "Stick barcode on"; Code[10])
+        field(50021; "Stick Barcode On"; Code[10])
         {
             DataClassification = ToBeClassified;
             Caption = 'Stick barcode on';
@@ -160,41 +160,41 @@ tableextension 50018 "Item Extension" extends Item
         {
             DataClassification = SystemMetadata;
             Caption = 'Export Web';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Web LN 10/06/24 REV24';
         }
-        field(50026; "Qté dispo (pcs)"; Integer)
+        field(50026; "Qté Dispo (pcs)"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Qté dispo (pcs)';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Web LN 10/06/24 REV24';
         }
-        field(50027; "Qté stock (pcs)"; Integer)
+        field(50027; "Qté Stock (pcs)"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Qté stock (pcs)';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Dépôt LN 10/06/24 REV24';
         }
-        field(50028; "Qté achats"; Integer)
+        field(50028; "Qté Achats"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Qté achats';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Dépôt LN 10/06/24 REV24';
         }
-        field(50029; "Qté ventes"; Integer)
+        field(50029; "Qté Ventes"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Qté ventes';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Dépôt LN 10/06/24 REV24';
         }
         field(50030; "Embalaje"; Text[30])
         {
             //TODO: Verifier relation!!
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Embalaje';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'NTV LN 10/06/24 REV24';
             TableRelation = "Présentation"."Code";
         }
-        field(50031; "Stock dispo (pcs)"; Integer)
+        field(50031; "Stock Dispo (pcs)"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Stock dispo (pcs)';
@@ -204,10 +204,113 @@ tableextension 50018 "Item Extension" extends Item
         {
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code Eco-Mobilier';
-            Description = 'Article LN 10/06/24 REV24';
+            Description = 'Eco-Mobilier LN 10/06/24 REV24';
             TableRelation = "Code Eco-Mobilier"."Code";
         }
-
+        field(50033; "Poids Colis"; Decimal)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Poids colis';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50034; "Longueur Colis"; Integer)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Longueur colis';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50035; "Largeur Colis"; Integer)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Largeur colis';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50036; "Hauteur Colis"; Integer)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Hauteur colis';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50037; "Nbre Colis"; Integer)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Nbre colis';
+            Description = 'NTVAlmacen LN 10/06/24 REV24';
+        }
+        field(50038; "Code Eco-Participation"; code[3])
+        {
+            DataClassification = OrganizationIdentifiableInformation;
+            Caption = 'Code Eco-Participation';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50039; "Stock"; Integer)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Stock';
+            Description = 'NTVAlmacen LN 10/06/24 REV24';
+        }
+        field(50040; "DEEE"; Decimal)
+        {
+            //TODO: Verifier relation!!
+            DataClassification = OrganizationIdentifiableInformation;
+            Caption = 'DEEE';
+            Description = 'NTVWEB LN 10/06/24 REV24';
+            TableRelation = "Code DEEE"."Code";
+        }
+        field(50041; "Eco-Mobilier"; Decimal)
+        {
+            //TODO: Verifier relation!!
+            DataClassification = OrganizationIdentifiableInformation;
+            Caption = 'Eco-Mobilier';
+            Description = 'NTVWEB LN 10/06/24 REV24';
+            TableRelation = "Code Eco-Mobilier"."Code";
+        }
+        field(50042; "Eco-Mob"; Boolean)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Eco-Mob';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50043; "Date Eco-Mob"; Date)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Date Eco-Mob';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50044; "Eco-Sys"; Boolean)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Eco-Sys';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50045; "Date Eco-Sys"; Date)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Date Eco-Sys';
+            Description = 'Article LN 10/06/24 REV24';
+        }
+        field(50046; "Code DEEE"; Code[10])
+        {
+            //TODO: Verifier relation!!
+            DataClassification = OrganizationIdentifiableInformation;
+            Caption = 'Code DEEE';
+            Description = 'Article LN 10/06/24 REV24';
+            TableRelation = "Code DEEE"."Code";
+        }
+        field(50047; "Code Eco-Jardin"; Code[10])
+        {
+            //TODO: Verifier relation!!
+            DataClassification = OrganizationIdentifiableInformation;
+            Caption = 'Code Eco-Jardin';
+            Description = 'Article LN 10/06/24 REV24';
+            TableRelation = "Code Eco-Jardin"."Code";
+        }
+        field(50048; "Prix en baisse"; Boolean)
+        {
+            DataClassification = SystemMetadata;
+            Caption = 'Prix en baisse';
+            Description = 'Article LN 10/06/24 REV24';
+        }
 
     }
 }
