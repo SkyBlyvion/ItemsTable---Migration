@@ -6,6 +6,7 @@ permissionset 50022 "ItemExtenPermisSet"
         tabledata "Stick Barcode On" = RIMD,
         tabledata "Code Eco-Mobilier" = RIMD,
         tabledata "Code DEEE" = RIMD,
-        tabledata "Code Eco-Jardin" = RIMD;
+        tabledata "Code Eco-Jardin" = RIMD,
+        page "Presentation List" = X;
 
 }
