@@ -8,11 +8,11 @@ table 50019 "Code Eco-Mobilier"
         {
             DataClassification = ToBeClassified;
         }
-        field(2; "Taxe"; Decimal)
+        field(2; "Code éco-participation"; Code[3])
         {
             DataClassification = ToBeClassified;
         }
-        field(3; "Code éco-participation"; Code[3])
+        field(3; "Taxe"; Decimal)
         {
             DataClassification = ToBeClassified;
         }
@@ -24,7 +24,7 @@ table 50019 "Code Eco-Mobilier"
 
     keys
     {
-        key(PK; "Code")
+        key(PK; "Code", "Code éco-participation")
         {
             Clustered = true;
         }

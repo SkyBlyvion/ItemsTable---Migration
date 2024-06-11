@@ -32,7 +32,7 @@ table 50020 "Code DEEE"
 
     keys
     {
-        key(PK; "NDP")
+        key(PK; "NDP", "Code DEEE") // NDP + Code DEEE to avoid duplicates records where the same NDP migh be associated with different Code DEEE or vise versa.
         {
             Clustered = true;
         }

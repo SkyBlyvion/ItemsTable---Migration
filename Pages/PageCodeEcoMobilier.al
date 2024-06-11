@@ -15,11 +15,11 @@ page 50019 "Code Eco-Mobilier List"
                 {
                     ApplicationArea = All;
                 }
-                field("Taxe"; Rec."Taxe")
+                field("Code éco-participation"; Rec."Code éco-participation")
                 {
                     ApplicationArea = All;
                 }
-                field("Code éco-participation"; Rec."Code éco-participation")
+                field("Taxe"; Rec."Taxe")
                 {
                     ApplicationArea = All;
                 }
