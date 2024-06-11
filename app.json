@@ -2,7 +2,7 @@
   "id": "12eacc5c-c397-78fe-ad49-c030e45fcd3e",
   "name": "ItemsExtensionsTables",
   "publisher": "Lopez Nicolas",
-  "version": "1.0.0.6",
+  "version": "1.0.0.8",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -17,7 +17,7 @@
   "idRanges": [
     {
       "from": 50016,
-      "to": 50022
+      "to": 50028
     }
   ],
   "resourceExposurePolicy": {
