@@ -5,9 +5,7 @@ page 50027 "Presentation List"
     ApplicationArea = All;
     UsageCategory = Lists;
     Caption = 'Liste des présentations';
-    InsertAllowed = true;
-    ModifyAllowed = true;
-    DeleteAllowed = true;
+
 
     // d'ou ouvrir les pages, dans article>article>after References d'articles ? ou sinon dans la navigation menu mais quel role ? 
     // ou sinon créer une page d'actions globales
@@ -26,6 +24,7 @@ page 50027 "Presentation List"
                 field("Code Langue"; Rec."Code Langue")
                 {
                     ApplicationArea = All;
+                    TableRelation = Language."Code";
                 }
                 field("Désignation"; Rec."Désignation")
                 {

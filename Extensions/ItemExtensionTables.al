@@ -290,7 +290,7 @@ tableextension 50018 "Item Extension" extends Item
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code DEEE';
             Description = 'Article LN 10/06/24 REV24';
-            TableRelation = "Code DEEE"."Code";
+            TableRelation = "Code DEEE"."NDP";
         }
         field(50047; "Code Eco-Jardin"; Code[10])
         {

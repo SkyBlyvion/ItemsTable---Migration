@@ -12,7 +12,6 @@ table 50016 "Présentation"
         {
             DataClassification = ToBeClassified;
             TableRelation = Language."Code";
-            Editable = false;
         }
         field(3; "Désignation"; Text[30])
         {

@@ -1,23 +1,29 @@
-page 50026 "Code Eco-Mobilier List"
+page 50019 "Code Eco-Mobilier List"
 {
     PageType = List;
     SourceTable = "Code Eco-Mobilier";
     ApplicationArea = All;
-    InsertAllowed = true;
-    ModifyAllowed = true;
-    DeleteAllowed = true;
+    Caption = 'Liste des Codes Eco-Mobilier';
 
-    Layout
+    layout
     {
         area(content)
         {
             repeater(Group)
             {
-                field("Code"; Rec.Code)
+                field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
                 }
-                field("Désignation"; Rec.Désignation)
+                field("Taxe"; Rec."Taxe")
+                {
+                    ApplicationArea = All;
+                }
+                field("Code éco-participation"; Rec."Code éco-participation")
+                {
+                    ApplicationArea = All;
+                }
+                field("Nombre pièces"; Rec."Nombre pièces")
                 {
                     ApplicationArea = All;
                 }
