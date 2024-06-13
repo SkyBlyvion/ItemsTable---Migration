@@ -1,4 +1,4 @@
-page 50021 "Code Eco-Jardin List"
+page 50029 "Code Eco-Jardin List"
 {
     PageType = List;
     SourceTable = "Code Eco-Jardin";

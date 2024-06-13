@@ -6,11 +6,6 @@ page 50027 "Presentation List"
     UsageCategory = Lists;
     Caption = 'Liste des présentations';
 
-
-    // d'ou ouvrir les pages, dans article>article>after References d'articles ? ou sinon dans la navigation menu mais quel role ? 
-    // ou sinon créer une page d'actions globales
-    // ou utiliser Menu de navigation "Départements"
-
     layout
     {
         area(content)
@@ -24,7 +19,7 @@ page 50027 "Presentation List"
                 field("Code Langue"; Rec."Code Langue")
                 {
                     ApplicationArea = All;
-                    TableRelation = Language."Code";
+                    TableRelation = Language."Code"; // Relation avec la table Language
                 }
                 field("Désignation"; Rec."Désignation")
                 {

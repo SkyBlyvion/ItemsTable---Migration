@@ -1,9 +1,8 @@
-page 50028 "Stick Barcode On List"
+page 50025 "Stick Barcode On List"
 {
     PageType = List;
     SourceTable = "Stick Barcode On";
     ApplicationArea = All;
-
 
     Layout
     {

@@ -24,7 +24,7 @@ table 50019 "Code Eco-Mobilier"
 
     keys
     {
-        key(PK; "Code", "Code éco-participation")
+        key(PK; "Code", "Code éco-participation") // Clé primaire
         {
             Clustered = true;
         }

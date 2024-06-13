@@ -2,11 +2,12 @@ tableextension 50018 "Item Extension" extends Item
 {
     fields
     {
+        // Champ pour la date de création de l'article
         field(50000; "Date de création"; Date)
         {
-            DataClassification = SystemMetadata;
-            Caption = 'Date de création';
-            Description = 'Article LN 10/06/24 REV24';
+            DataClassification = SystemMetadata; // Classification des données
+            Caption = 'Date de création'; // Libellé du champ
+            Description = 'Article LN 10/06/24 REV24'; // Description du champ
         }
         field(50001; "Code EAN13"; Code[13])
         {
@@ -131,7 +132,7 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Article LN 10/06/24 REV24';
             OptionMembers = "","Egg Grate","White Box","White Box + Color Label","Normal Box","Display Box","Polybag","Cardboard","Paper";
         }
-        field(50021; "Stick Barcode On"; Code[10])
+        field(50021; "Stick Barcode On"; Code[10]) //TODO: modifier Code10 en Text60
         {
             DataClassification = ToBeClassified;
             Caption = 'Stick barcode on';

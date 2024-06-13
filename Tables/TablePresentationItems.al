@@ -11,7 +11,7 @@ table 50016 "Présentation"
         field(2; "Code Langue"; Code[10])
         {
             DataClassification = ToBeClassified;
-            TableRelation = Language."Code";
+            TableRelation = Language."Code"; // Relation avec la table Language
         }
         field(3; "Désignation"; Text[30])
         {

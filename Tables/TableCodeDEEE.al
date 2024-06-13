@@ -1,9 +1,10 @@
 table 50020 "Code DEEE"
 {
-    DataClassification = ToBeClassified;
+    DataClassification = ToBeClassified; // Classification des données
 
     fields
     {
+        // Champ pour le NDP
         field(1; "NDP"; Code[10])
         {
             DataClassification = ToBeClassified;

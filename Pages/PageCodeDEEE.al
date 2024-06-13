@@ -1,20 +1,22 @@
 page 50024 "Code DEEE List"
 {
-    PageType = List;
-    SourceTable = "Code DEEE";
-    ApplicationArea = All;
-    Caption = 'Liste des Codes DEEE';
+    PageType = List; // Type de page
+    SourceTable = "Code DEEE"; // Table de donnée
+    ApplicationArea = All; // Zone d'application
+    Caption = 'Liste des Codes DEEE'; // Libellé de la page
 
-    layout
+    layout // Mise en page
     {
-        area(content)
+        area(content) // Zone de contenu
         {
-            repeater(Group)
+            repeater(Group) // Groupe de champs
             {
+                // Champ pour le NDP
                 field("NDP"; Rec."NDP")
                 {
                     ApplicationArea = All;
                 }
+                // Champ pour le Code DEEE
                 field("Code DEEE"; Rec."Code DEEE")
                 {
                     ApplicationArea = All;
