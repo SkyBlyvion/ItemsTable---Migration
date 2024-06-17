@@ -204,7 +204,7 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Stock dispo (pcs)';
             Description = 'Article LN 10/06/24 REV24';
         }
-        field(50032; "Code Eco-Mobilier"; Code[10])
+        field(50032; "Code Eco-Mobilier"; Code[11])
         {
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code Eco-Mobilier';
