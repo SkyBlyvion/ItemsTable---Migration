@@ -14,6 +14,7 @@ tableextension 50018 "Item Extension" extends Item
             DataClassification = EndUserIdentifiableInformation;
             Caption = 'Code EAN13';
             Description = 'Article LN 10/06/24 REV24';
+            ObsoleteState = Pending;
         }
         field(50002; "Code Famille"; Code[10])
         {
@@ -32,6 +33,7 @@ tableextension 50018 "Item Extension" extends Item
             DataClassification = CustomerContent;
             Caption = 'Image article';
             Description = 'Article LN 10/06/24 REV24';
+            ObsoleteState = Pending;
         }
         field(50005; "Colisage"; Integer)
         {
@@ -193,6 +195,8 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Embalaje';
             Description = 'NTV LN 10/06/24 REV24';
             TableRelation = "Présentation"."Code";
+            ObsoleteState = Pending;
+
         }
         field(50031; "Stock Dispo (pcs)"; Integer)
         {

@@ -12,6 +12,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Code EAN13"; Rec."Code EAN13")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Code Famille"; Rec."Code Famille")
             {
@@ -24,6 +25,8 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Image Article"; Rec."Image Article")
             {
                 ApplicationArea = All;
+                Visible = false;
+
             }
             field("Présentation"; Rec."Présentation")
             {
@@ -44,6 +47,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Export Web"; Rec."Export Web")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
         }
 
@@ -53,26 +57,32 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Qté Dispo (pcs)"; Rec."Qté Dispo (pcs)")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Qté Stock (pcs)"; Rec."Qté Stock (pcs)")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Qté Achats"; Rec."Qté Achats")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Qté Ventes"; Rec."Qté Ventes")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Stock Dispo (pcs)"; Rec."Stock Dispo (pcs)")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Stock"; Rec."Stock")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
         }
 
@@ -82,6 +92,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Prix de revient"; Rec."Prix de revient")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("DEEE"; Rec."DEEE")
             {
@@ -155,6 +166,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Prix en baisse"; Rec."Prix en baisse")
             {
                 ApplicationArea = All;
+                Editable = false;
             }
         }
 
@@ -177,10 +189,13 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Article Exporté"; Rec."Article Exporté")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
             field("Embalaje"; Rec."Embalaje")
             {
                 ApplicationArea = All;
+                Visible = false;
+
             }
         }
 
