@@ -196,7 +196,6 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'NTV LN 10/06/24 REV24';
             TableRelation = "Présentation"."Code";
             ObsoleteState = Pending;
-
         }
         field(50031; "Stock Dispo (pcs)"; Integer)
         {
