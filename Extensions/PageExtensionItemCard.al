@@ -9,11 +9,13 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             {
                 ApplicationArea = All;
             }
+            /*
             field("Code EAN13"; Rec."Code EAN13")
             {
                 ApplicationArea = All;
                 Visible = false;
             }
+            */
             field("Code Famille"; Rec."Code Famille")
             {
                 ApplicationArea = All;
@@ -22,12 +24,14 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             {
                 ApplicationArea = All;
             }
+            /*
             field("Image Article"; Rec."Image Article")
             {
                 ApplicationArea = All;
                 Visible = false;
 
             }
+            */
             field("Présentation"; Rec."Présentation")
             {
                 ApplicationArea = All;
@@ -154,6 +158,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Volume Colis"; Rec."Volume Colis")
             {
                 ApplicationArea = All;
+                // Ne pas spécifier DecimalPlaces ici pour conserver la flexibilité des décimales
             }
             field("Article Promo"; Rec."Article Promo")
             {
@@ -191,12 +196,14 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
                 ApplicationArea = All;
                 Visible = false;
             }
+            /*
             field("Embalaje"; Rec."Embalaje")
             {
                 ApplicationArea = All;
                 Visible = false;
 
             }
+            */
         }
 
         // Ajout des champs au groupe "Tracabilité"

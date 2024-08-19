@@ -25,6 +25,8 @@
 ## les PermissionsSets
  - ItemExtenPermisSet **50022**
 
+## les Dépendences 
+ - TableExtenItemTriggerCalculGTIN
 
 ### PageExtensionArticles Disposition
 
