@@ -8,6 +8,7 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             field("Date de création"; Rec."Date de création")
             {
                 ApplicationArea = All;
+                ToolTip = 'Date de création de la fiche article';
             }
             /*
             field("Code EAN13"; Rec."Code EAN13")
@@ -18,10 +19,12 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             */
             field("Code Famille"; Rec."Code Famille")
             {
+                ToolTip = 'Code Famille de l''article';
                 ApplicationArea = All;
             }
             field("Déprécié"; Rec."Déprécié")
             {
+                ToolTip = 'Indique si l''article est déprécié';
                 ApplicationArea = All;
             }
             /*
@@ -34,22 +37,27 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             */
             field("Présentation"; Rec."Présentation")
             {
+                ToolTip = 'Type de présentation de l''article';
                 ApplicationArea = All;
             }
             field("Normes 1"; Rec."Normes 1")
             {
+                ToolTip = 'Première norme associée à l''article';
                 ApplicationArea = All;
             }
             field("Normes 2"; Rec."Normes 2")
             {
+                ToolTip = 'Seconde norme associée à l''article';
                 ApplicationArea = All;
             }
             field("Dimensions"; Rec."Dimensions")
             {
+                ToolTip = 'Dimensions de l''article';
                 ApplicationArea = All;
             }
             field("Export Web"; Rec."Export Web")
             {
+                ToolTip = 'Indique si l''article est exporté au Web';
                 ApplicationArea = All;
                 Visible = false;
             }
@@ -60,31 +68,37 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
         {
             field("Qté Dispo (pcs)"; Rec."Qté Dispo (pcs)")
             {
+                ToolTip = 'Quantité disponible en stock pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("Qté Stock (pcs)"; Rec."Qté Stock (pcs)")
             {
+                ToolTip = 'Quantité totale en stock pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("Qté Achats"; Rec."Qté Achats")
             {
+                ToolTip = 'Quantité totale d''achats pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("Qté Ventes"; Rec."Qté Ventes")
             {
+                ToolTip = 'Quantité totale de ventes pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("Stock Dispo (pcs)"; Rec."Stock Dispo (pcs)")
             {
+                ToolTip = 'Quantité disponible en stock pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("Stock"; Rec."Stock")
             {
+                ToolTip = 'Stock actuel pour l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
@@ -95,11 +109,13 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
         {
             field("Prix de revient"; Rec."Prix de revient")
             {
+                ToolTip = 'Prix de revient unitaire de l''article';
                 ApplicationArea = All;
                 Visible = false;
             }
             field("DEEE"; Rec."DEEE")
             {
+                ToolTip = 'Montant de l''éco-participation DEEE pour l''article';
                 ApplicationArea = All;
             }
             field("Eco-Mobilier"; Rec."Eco-Mobilier")

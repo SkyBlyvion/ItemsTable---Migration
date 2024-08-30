@@ -2,7 +2,7 @@
     "id": "12eacc5c-c397-78fe-ad49-c030e45fcd3e",
     "name": "ItemsExtensionsTables",
     "publisher": "Lopez Nicolas",
-    "version": "1.0.2.0",
+    "version": "1.0.2.7",
     "brief": "",
     "description": "",
     "privacyStatement": "",
@@ -11,36 +11,6 @@
     "url": "",
     "logo": "",
     "dependencies": [
-        {
-            "id": "E2AE191D-8829-44C3-A373-3749A2742D4D",
-            "name": "Service Declaration",
-            "publisher": "Microsoft",
-            "version": "24.3.21374.21570"
-        },
-        {
-            "id": "9D5D4106-1A59-4A3A-8940-65A9024AD1B3",
-            "name": "TableExtenItemTriggers",
-            "publisher": "Lopez Nicolas - REVIMPORT",
-            "version": "1.0.0.1"
-        },
-        {
-            "id": "70912191-3C4C-49FC-A1DE-BC6EA1AC9DA6",
-            "name": "Intrastat Core",
-            "publisher": "Microsoft",
-            "version": "24.3.21374.21570"
-        },
-        {
-            "id": "EC255F57-31D0-4CA2-B751-F2FA7C745ABB",
-            "name": "Shopify Connector",
-            "publisher": "Microsoft",
-            "version": "24.3.21374.21570"
-        },
-        {
-            "id": "C526B3E9-B8CA-4683-81BA-FCD5F6B1472A",
-            "name": "Sales and Inventory Forecast",
-            "publisher": "Microsoft",
-            "version": "24.3.21374.21570"
-        }
     ],
     "screenshots": [],
     "platform": "1.0.0.0",

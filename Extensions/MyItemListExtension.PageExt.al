@@ -14,6 +14,7 @@ pageextension 50023 MyItemListExtension extends "Item List"
                 action(CodeDEEE)
                 {
                     Caption = 'Code DEEE'; // Libellé de l'action
+                    ToolTip = 'Code DEEE';
                     Image = Action; // Icône de l'action
                     Promoted = true; // Promotion de l'action
                     PromotedCategory = Process; // Catégorie de promotion
@@ -31,6 +32,7 @@ pageextension 50023 MyItemListExtension extends "Item List"
                 action(CodeEcoJardin)
                 {
                     Caption = 'Code Eco-Jardin';
+                    ToolTip = 'Code Eco-Jardin';
                     Image = Action;
                     Promoted = true;
                     PromotedCategory = Process;
@@ -48,6 +50,7 @@ pageextension 50023 MyItemListExtension extends "Item List"
                 action(CodeEcoMobilier)
                 {
                     Caption = 'Code Eco-Mobilier';
+                    ToolTip = 'Code Eco-Mobilier';
                     Image = Action;
                     Promoted = true;
                     PromotedCategory = Process;
@@ -65,6 +68,7 @@ pageextension 50023 MyItemListExtension extends "Item List"
                 action(Presentation)
                 {
                     Caption = 'Présentation'; // Libellé de l'action
+                    ToolTip = 'Présentation';
                     Image = Bin;
                     Promoted = true;
                     PromotedCategory = Process;
@@ -82,6 +86,7 @@ pageextension 50023 MyItemListExtension extends "Item List"
                 action(StickBarcodeOn)
                 {
                     Caption = 'Stick Barcode On';
+                    ToolTip = 'Code Barre';
                     Image = BarCode;
                     Promoted = true;
                     PromotedCategory = Process;

@@ -143,7 +143,7 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Article LN 10/06/24 REV24';
             OptionMembers = "","Egg Grate","White Box","White Box + Color Label","Normal Box","Display Box","Polybag","Cardboard","Paper";
         }
-        field(50021; "Stick Barcode On"; Code[10]) //TODO: modifier Code10 en Text60
+        field(50021; "Stick Barcode On"; Code[10])
         {
             DataClassification = ToBeClassified;
             Caption = 'Stick barcode on';
@@ -323,4 +323,31 @@ tableextension 50018 "Item Extension" extends Item
         }
 
     }
+    trigger OnInsert()
+    var
+        CodeFamille: Code[10];
+    begin
+        // Extraire les 2 premiers caractères de l'itemNo pour le CodeFamille
+        CodeFamille := CopyStr(Rec."No.", 1, 2);
+        Rec."Code Famille" := CodeFamille;
+
+        //Remplir le champ Unité de base avec PCS
+        Rec."Base Unit of Measure" := 'PCS';
+
+        // Remplir le champ Date de Création de l'article avec la date actuelle
+        Rec."Date de création" := Today;
+
+        // Set the Gen. Prod. Posting Group to DIVERS and trigger OnValidate
+        Rec.Validate("Gen. Prod. Posting Group", 'Divers');
+
+        // Remplir le champ Groupe Compta Stock avec Negoce
+        Rec."Inventory Posting Group" := 'Négoce';
+
+        // Remplir le champ NbreColis avec 1
+        Rec."Nbre Colis" := 1;
+
+        // Remplir le champ Groupe remise article avec Négoce
+        Rec."Item Disc. Group" := 'Négoce';
+
+    end;
 }
