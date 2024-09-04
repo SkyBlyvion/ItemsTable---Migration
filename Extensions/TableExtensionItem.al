@@ -60,12 +60,12 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Sous Colisage';
             Description = 'Article LN 10/06/24 REV24';
         }
-        field(50008; "Présentation"; Code[10])
+        field(50008; "Présentation"; Text[100])
         {
             DataClassification = ToBeClassified;
             Caption = 'Présentation';
             Description = 'Article LN 10/06/24 REV24';
-            TableRelation = "Présentation"."Code";
+            TableRelation = "Présentation"."Designation Fr";
         }
         field(50009; "Volume Colis"; Decimal)
         {

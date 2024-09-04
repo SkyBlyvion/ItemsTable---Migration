@@ -13,14 +13,14 @@ page 50027 "Presentation List"
         {
             repeater(Group)
             {
-                field("Code"; Rec."Code")
-                {
-                    ApplicationArea = All;
-                }
                 field("Designation Fr"; Rec."Designation Fr")
                 {
                     ApplicationArea = All;
                     Caption = 'Désignation FR';
+                }
+                field("Code"; Rec."Code")
+                {
+                    ApplicationArea = All;
                 }
                 field("Designation ESP"; Rec."Designation ESP")
                 {
