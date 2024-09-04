@@ -39,6 +39,8 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             {
                 ToolTip = 'Type de présentation de l''article';
                 ApplicationArea = All;
+                LookupPageID = "Presentation List";
+
             }
             field("Normes 1"; Rec."Normes 1")
             {
@@ -282,6 +284,5 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
         // Ajouter des changements aux actions de la page ici
     }
 
-    var
-        myInt: Integer;
+
 }

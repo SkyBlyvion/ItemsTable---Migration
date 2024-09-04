@@ -5,6 +5,7 @@ page 50027 "Presentation List"
     ApplicationArea = All;
     UsageCategory = Lists;
     Caption = 'Liste des présentations';
+    Editable = true;
 
     layout
     {
@@ -16,14 +17,20 @@ page 50027 "Presentation List"
                 {
                     ApplicationArea = All;
                 }
-                field("Code Langue"; Rec."Code Langue")
+                field("Designation Fr"; Rec."Designation Fr")
                 {
                     ApplicationArea = All;
-                    TableRelation = Language."Code"; // Relation avec la table Language
+                    Caption = 'Désignation FR';
                 }
-                field("Désignation"; Rec."Désignation")
+                field("Designation ESP"; Rec."Designation ESP")
                 {
                     ApplicationArea = All;
+                    Caption = 'Désignation ESP';
+                }
+                field("Designation ENU"; Rec."Designation ENU")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Désignation ENU';
                 }
             }
         }

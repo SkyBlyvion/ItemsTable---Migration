@@ -11,14 +11,14 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Article LN 10/06/24 REV24'; // Description du champ
         }
 
-        field(50001; "Code EAN13"; Code[13])
-        {
-            DataClassification = EndUserIdentifiableInformation;
-            Caption = 'Code EAN13';
-            Description = 'Article LN 10/06/24 REV24';
-            ObsoleteState = Pending;
-            ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
-        }
+        // field(50001; "Code EAN13"; Code[13])
+        // {
+        //     DataClassification = EndUserIdentifiableInformation;
+        //     Caption = 'Code EAN13';
+        //     Description = 'Article LN 10/06/24 REV24';
+        //     ObsoleteState = Pending;
+        //     ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
+        // }
 
         field(50002; "Code Famille"; Code[10])
         {
@@ -33,14 +33,14 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Article LN 10/06/24 REV24';
         }
 
-        field(50004; "Image Article"; Blob)
-        {
-            DataClassification = CustomerContent;
-            Caption = 'Image article';
-            Description = 'Article LN 10/06/24 REV24';
-            ObsoleteState = Pending;
-            ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
-        }
+        // field(50004; "Image Article"; Blob)
+        // {
+        //     DataClassification = CustomerContent;
+        //     Caption = 'Image article';
+        //     Description = 'Article LN 10/06/24 REV24';
+        //     ObsoleteState = Pending;
+        //     ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
+        // }
 
         field(50005; "Colisage"; Integer)
         {
@@ -199,15 +199,15 @@ tableextension 50018 "Item Extension" extends Item
             Description = 'Dépôt LN 10/06/24 REV24';
         }
 
-        field(50030; "Embalaje"; Text[30])
-        {
-            DataClassification = OrganizationIdentifiableInformation;
-            Caption = 'Embalaje';
-            Description = 'NTV LN 10/06/24 REV24';
-            TableRelation = "Présentation"."Code";
-            ObsoleteState = Pending;
-            ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
-        }
+        // field(50030; "Embalaje"; Text[30])
+        // {
+        //     DataClassification = OrganizationIdentifiableInformation;
+        //     Caption = 'Embalaje';
+        //     Description = 'NTV LN 10/06/24 REV24';
+        //     TableRelation = "Présentation"."Code";
+        //     ObsoleteState = Pending;
+        //     ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
+        // }
 
         field(50031; "Stock Dispo (pcs)"; Integer)
         {
