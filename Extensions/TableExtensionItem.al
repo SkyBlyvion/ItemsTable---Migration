@@ -65,7 +65,7 @@ tableextension 50018 "Item Extension" extends Item
             DataClassification = ToBeClassified;
             Caption = 'Présentation';
             Description = 'Article LN 10/06/24 REV24';
-            TableRelation = "Présentation"."Designation Fr";
+            TableRelation = "Présentation".Code;
         }
         field(50009; "Volume Colis"; Decimal)
         {

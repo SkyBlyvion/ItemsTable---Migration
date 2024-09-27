@@ -37,10 +37,21 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
             */
             field("Présentation"; Rec."Présentation")
             {
-                ToolTip = 'Type de présentation de l''article';
                 ApplicationArea = All;
-                LookupPageID = "Presentation List";
+                Caption = 'Présentation';
+                ToolTip = 'Présentation de l''article';
+                Description = 'Article LN 10/06/24 REV24';
 
+                trigger OnLookup(var Text: Text): Boolean
+                var
+                    PrésentationRec: Record "Présentation";
+                begin
+                    if Page.RunModal(Page::"Presentation List", PrésentationRec) = Action::LookupOK then begin
+                        Rec."Présentation" := PrésentationRec."Code";
+                        exit(true);
+                    end;
+                    exit(false);
+                end;
             }
             field("Normes 1"; Rec."Normes 1")
             {

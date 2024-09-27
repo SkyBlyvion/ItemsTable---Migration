@@ -33,5 +33,9 @@ table 50016 "Présentation"
         {
             Clustered = true;
         }
+        key(SecondaryKey; "Designation Fr")
+        {
+            Enabled = true;
+        }
     }
 }
