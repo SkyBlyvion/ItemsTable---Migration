@@ -5,15 +5,15 @@ table 50016 "Présentation"
 
     fields
     {
-        field(1; "Designation Fr"; Text[100])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Designation FR';
-        }
-        field(2; "Code"; Code[20])
+        field(1; "Code"; Code[20])
         {
             DataClassification = ToBeClassified;
             Caption = 'Code';
+        }
+        field(2; "Designation Fr"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Designation FR';
         }
         field(3; "Designation ESP"; Text[100])
         {
@@ -29,7 +29,7 @@ table 50016 "Présentation"
 
     keys
     {
-        key(PK; "Designation Fr", "Code")
+        key(PK; "Code")
         {
             Clustered = true;
         }

@@ -13,24 +13,25 @@ page 50027 "Presentation List"
         {
             repeater(Group)
             {
-                field("Designation Fr"; Rec."Designation Fr")
-                {
-                    ApplicationArea = All;
-                    Caption = 'Désignation FR';
-                }
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Code de l''article';
+                }
+                field("Designation Fr"; Rec."Designation Fr")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Désignation FR';
                 }
                 field("Designation ESP"; Rec."Designation ESP")
                 {
                     ApplicationArea = All;
-                    Caption = 'Désignation ESP';
+                    ToolTip = 'Désignation ESP';
                 }
                 field("Designation ENU"; Rec."Designation ENU")
                 {
                     ApplicationArea = All;
-                    Caption = 'Désignation ENU';
+                    ToolTip = 'Désignation UK';
                 }
             }
         }
