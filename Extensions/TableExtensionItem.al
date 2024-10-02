@@ -25,6 +25,8 @@ tableextension 50018 "Item Extension" extends Item
             DataClassification = OrganizationIdentifiableInformation;
             Caption = 'Code Famille';
             Description = 'Article LN 10/06/24 REV24';
+            ObsoleteState = Removed;
+            ObsoleteReason = 'Ce champ est obsolète et ne doit plus être utilisé.';
         }
         field(50003; "Déprécié"; Boolean)
         {
@@ -60,12 +62,12 @@ tableextension 50018 "Item Extension" extends Item
             Caption = 'Sous Colisage';
             Description = 'Article LN 10/06/24 REV24';
         }
-        field(50008; "Présentation"; Text[100])
+        field(50008; "Présentation"; Code[20])
         {
             DataClassification = ToBeClassified;
             Caption = 'Présentation';
             Description = 'Article LN 10/06/24 REV24';
-            TableRelation = "Présentation".Code;
+            TableRelation = "Présentation";
         }
         field(50009; "Volume Colis"; Decimal)
         {
@@ -153,13 +155,13 @@ tableextension 50018 "Item Extension" extends Item
         field(50022; "Normes 1"; Text[80])
         {
             DataClassification = SystemMetadata;
-            Caption = 'Normes 1';
+            Caption = 'Normes';
             Description = 'Article LN 10/06/24 REV24';
         }
         field(50023; "Normes 2"; Text[80])
         {
             DataClassification = SystemMetadata;
-            Caption = 'Normes 2';
+            Caption = 'Normes';
             Description = 'Article LN 10/06/24 REV24';
         }
         field(50024; "Dimensions"; Text[80])
@@ -325,11 +327,11 @@ tableextension 50018 "Item Extension" extends Item
     }
     trigger OnInsert()
     var
-        CodeFamille: Code[10];
+    //CodeFamille: Code[10];
     begin
         // Extraire les 2 premiers caractères de l'itemNo pour le CodeFamille
-        CodeFamille := CopyStr(Rec."No.", 1, 2);
-        Rec."Code Famille" := CodeFamille;
+        // CodeFamille := CopyStr(Rec."No.", 1, 2);
+        // Rec."Code Famille" := CodeFamille;
 
         //Remplir le champ Unité de base avec PCS
         Rec."Base Unit of Measure" := 'PCS';

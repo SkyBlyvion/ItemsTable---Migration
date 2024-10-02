@@ -17,11 +17,12 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
                 Visible = false;
             }
             */
-            field("Code Famille"; Rec."Code Famille")
-            {
-                ToolTip = 'Code Famille de l''article';
-                ApplicationArea = All;
-            }
+            // field("Code Famille"; Rec."Code Famille")
+            // {
+            //     ToolTip = 'Code Famille de l''article';
+            //     ApplicationArea = All;
+
+            // }
             field("Déprécié"; Rec."Déprécié")
             {
                 ToolTip = 'Indique si l''article est déprécié';
@@ -40,18 +41,6 @@ pageextension 50028 "Item Card Extension" extends "Item Card"
                 ApplicationArea = All;
                 Caption = 'Présentation';
                 ToolTip = 'Présentation de l''article';
-                Description = 'Article LN 10/06/24 REV24';
-
-                trigger OnLookup(var Text: Text): Boolean
-                var
-                    PrésentationRec: Record "Présentation";
-                begin
-                    if Page.RunModal(Page::"Presentation List", PrésentationRec) = Action::LookupOK then begin
-                        Rec."Présentation" := PrésentationRec."Code";
-                        exit(true);
-                    end;
-                    exit(false);
-                end;
             }
             field("Normes 1"; Rec."Normes 1")
             {

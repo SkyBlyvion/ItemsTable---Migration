@@ -2,6 +2,7 @@ table 50016 "Présentation"
 {
     DataClassification = ToBeClassified;
     Caption = 'Présentation';
+    LookupPageID = "Presentation List";
 
     fields
     {
@@ -38,4 +39,14 @@ table 50016 "Présentation"
             Enabled = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Code", "Designation Fr")
+        {
+            Caption = 'Présentation';
+        }
+    }
+
 }
+
