@@ -13,10 +13,12 @@ page 50025 "Stick Barcode On List"
                 field("Code"; Rec.Code)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Code de l''article';
                 }
                 field("Désignation"; Rec.Désignation)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Désignation de l''article';
                 }
             }
         }

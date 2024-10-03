@@ -155,7 +155,7 @@ tableextension 50018 "Item Extension" extends Item
         field(50022; "Normes 1"; Text[80])
         {
             DataClassification = SystemMetadata;
-            Caption = 'Normes';
+            Caption = 'Instructions spéciales';
             Description = 'Article LN 10/06/24 REV24';
         }
         field(50023; "Normes 2"; Text[80])
